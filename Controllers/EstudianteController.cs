@@ -24,7 +24,7 @@ namespace mvc_lab.Controllers{
         [HttpPost]
         public IActionResult Almacenar(Estudiante estudiante){
             if(ModelState.IsValid){
-                estudiante.Answer="Se ha registrado la información";
+                estudiante.Answer="Registro de Base de Datos (*)";
             }
 
             return View("Index",estudiante);
